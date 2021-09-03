@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Đăng nhập</title>
+	<link rel="stylesheet" type="text/css" href="./css/login.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+				<div class="login">
+					<form method="POST" id="form_insert">
+						<fieldset>
+							<legend>Đăng nhập</legend>
+							<label>
+					Tên Đăng Nhập:
+					<br>
+					<input onkeyup="hideErrorUsername()" type="text" name="email" id="input_email">
+				</label>
+				<p id="error_username" style="color: red;"></p>
+				<br>
+				<label>
+					Mật Khẩu:
+					<br>
+					<input onkeyup="hideErrorPassword()" type="password" name="password" id="input_password">
+				</label>
+				<p id="error_password" style="color: red;"></p>
+				<button onclick="validateForm()" type="button" id="DN">
+					Đăng Nhâp
+				</button>
+				<button onclick="validateForm()" type="button" id="Face">
+					FaceBook
+				</button>
+			
+						</fieldset>
+					</form>
+					<a href="WEB.html" style="text-decoration: none; border: 1px solid black;">Quay lại trang chủ</a>
+					</div> 
+			
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="./js/login.js"></script>
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+</html>
